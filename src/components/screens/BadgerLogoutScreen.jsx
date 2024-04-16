@@ -1,12 +1,23 @@
 import { Alert, Button, StyleSheet, Text, View } from "react-native";
+import * as SecureStore from 'expo-secure-store';
 
 function BadgerLogoutScreen(props) {
+
+    const clearStorage = async () => {
+        await SecureStore.deleteItemAsync("jwt");
+        await SecureStore.deleteItemAsync("user");
+    }
+
+    const handleLogout = () => {
+        clearStorage()
+        props.logout();
+    }
 
     return <View style={styles.container}>
         <Text style={{fontSize: 24, marginTop: -100}}>Are you sure you're done?</Text>
         <Text>Come back soon!</Text>
         <Text/>
-        <Button title="Logout" color="darkred" onPress={() => Alert.alert("Hmmm...", "This should do something!")}/>
+        <Button title="Logout" color="darkred" onPress={() => handleLogout()}/>
 
     </View>
 }
