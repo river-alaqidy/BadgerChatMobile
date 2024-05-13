@@ -2,7 +2,7 @@
 # BadgerChat Mobile
 
 After developing the React web version of BadgerChat, this chatroom message board was transitioned to a React Native mobile application.
-Below is a a screen recorded video of the app in action.
+Below is a a screen recorded video of the app in action. To see the code used to build the app look in the src/components folder.
 
 ## Video Demonstration tasks
  1. Try to register for an account that already exists.
