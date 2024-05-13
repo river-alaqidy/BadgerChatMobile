@@ -4,6 +4,8 @@
 After developing the React web version of BadgerChat, this chatroom message board was transitioned to a React Native mobile application.
 Below is a a screen recorded video of the app in action. To see the code used to build the app look in the src/components folder.
 
+Note in the video demonstration that password entering has been masked so screen recordings do not show passwords being entered.
+
 ## Video Demonstration tasks
  1. Try to register for an account that already exists.
  2. Register for a new account.
@@ -18,3 +20,5 @@ Below is a a screen recorded video of the app in action. To see the code used to
  11. Continue as a guest.
  12. Visit a chatroom.
  13. Return to signup.
+
+[RPReplay_Final1713240570.mov.zip](https://github.com/river-alaqidy/BadgerChatMobile/files/15298496/RPReplay_Final1713240570.mov.zip)
